@@ -17,11 +17,162 @@ $medium-small: 750px;
 $small: 475px;
 ///////////////////////////////////////
 
-.content-block-root-name
+.values-block
 {
 	// for any given block of content you're building, when possible please put all styles inside
 	// a wrapper with a class or id of the root element of that bit of markup, that way the compiled
 	// styles end up namespaced so they can't accidentally affect other parts of the website
+	margin: 20px 0;
+	background: $green;
+	color: $cream;
+	text-align: center;
 
+	.values-block-inner {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 60px 30px 22px;
+	}
 	
+	h2
+	{
+		margin: 0 0 5px 0;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	p
+	{
+		margin: 0 0 50px;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	.values-list 
+	{
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0px;
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.value-item 
+	{
+		margin: 0 15px 48px;
+		width: 150px;
+	}
+
+	svg
+	{
+		vertical-align: middle;
+
+		path 
+		{ 
+			fill: currentColor; // change the color of icons as needed
+		}
+	}
+
+	.value-item-text 
+	{
+		margin-top: 9px;
+		font-size: 19px;
+		line-height: normal;
+	}
+
+	@media screen and (max-width: $medium)
+	{
+		.values-block-inner 
+		{
+			padding: 50px 28px 5px;
+		}
+
+		h2 
+		{
+			font-size: 30px;
+			margin: 0 0 10px 0;
+		}
+
+		p
+		{
+			font-size: 17px;
+			margin: 0 0 38px;
+		}
+
+		.values-list 
+		{
+			max-width: 700px;
+		}
+
+		.value-item 
+		{
+			width: 100px;
+		}
+
+		svg
+		{
+			width: 87px;
+			height: 87px;
+		}
+
+		.value-item-text 
+		{
+			margin-top: 9px;
+			font-size: 16px;
+			line-height: normal;
+		}
+	}
+
+	@media screen and (max-width: $medium-small) 
+	{
+		.values-block-inner 
+		{
+			padding: 50px 28px 15px;
+		}
+
+		.values-list 
+		{
+			max-width: 600px;
+		}
+
+		.value-item 
+		{
+			margin: 0 0.675vw 28px;
+		}
+	}
+
+	@media screen and (max-width: 374px)
+	{
+		.value-item 
+		{
+			width: 95px
+		}
+
+		svg {
+			width: 70px;
+			height: 70px;
+		}
+
+		.value-item-text {
+			font-size: 14px;
+		}
+	}
+}
+
+.testing {
+	&::before
+	{
+		content: '\203A';
+		margin-right: 15px;
+		transition: transform 0.3s;
+		transform: rotate(90deg);
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		font-size: 25px;
+	}
 }

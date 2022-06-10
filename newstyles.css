@@ -1,2 +1,121 @@
+@charset "UTF-8";
+.values-block {
+  margin: 20px 0;
+  background: #567d68;
+  color: #f5f4ec;
+  text-align: center;
+}
+.values-block .values-block-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 30px 22px;
+}
+.values-block h2 {
+  margin: 0 0 5px 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+}
+.values-block p {
+  margin: 0 0 50px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.values-block .values-list {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.values-block .value-item {
+  margin: 0 15px 48px;
+  width: 150px;
+}
+.values-block svg {
+  vertical-align: middle;
+}
+.values-block svg path {
+  fill: currentColor;
+}
+.values-block .value-item-text {
+  margin-top: 9px;
+  font-size: 19px;
+  line-height: normal;
+}
+@media screen and (max-width: 1000px) {
+  .values-block .values-block-inner {
+    padding: 50px 28px 5px;
+  }
+  .values-block h2 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+  }
+  .values-block p {
+    font-size: 17px;
+    margin: 0 0 38px;
+  }
+  .values-block .values-list {
+    max-width: 700px;
+  }
+  .values-block .value-item {
+    width: 100px;
+  }
+  .values-block svg {
+    width: 87px;
+    height: 87px;
+  }
+  .values-block .value-item-text {
+    margin-top: 9px;
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 750px) {
+  .values-block .values-block-inner {
+    padding: 50px 28px 15px;
+  }
+  .values-block .values-list {
+    max-width: 600px;
+  }
+  .values-block .value-item {
+    margin: 0 0.675vw 28px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .values-block .value-item {
+    width: 95px;
+  }
+  .values-block svg {
+    width: 70px;
+    height: 70px;
+  }
+  .values-block .value-item-text {
+    font-size: 14px;
+  }
+}
 
+.testing::before {
+  content: "›";
+  margin-right: 15px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  font-size: 25px;
+}
 /*# sourceMappingURL=newstyles.css.map */
