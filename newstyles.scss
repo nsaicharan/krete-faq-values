@@ -17,21 +17,137 @@ $medium-small: 750px;
 $small: 475px;
 ///////////////////////////////////////
 
-.values-block
+#faq-block 
 {
 	// for any given block of content you're building, when possible please put all styles inside
 	// a wrapper with a class or id of the root element of that bit of markup, that way the compiled
 	// styles end up namespaced so they can't accidentally affect other parts of the website
-	margin: 20px 0;
+	padding: 60px 0 80px;
+	background: $cream;
+	color: $dark;
+
+	h2 
+	{
+		margin-top: 0;
+		margin-bottom: 40px;
+		padding-bottom: 22px;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: normal;
+		text-align: center;
+		border-bottom: 1px solid currentColor;
+	}
+
+	.faq-list 
+	{
+		max-width: 700px;
+		margin: 0 auto;
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	.faq-list-item 
+	{
+		&:not(:last-of-type) 
+		{
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid currentColor;
+		}
+	}
+
+	.faq-question 
+	{
+		margin: 0;
+		padding-left: 40px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: normal;
+		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
+
+		// Down arrow
+		&::before 
+		{
+			content: '\203A';
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: -14px;
+			font-size: 1.9em;
+			font-weight: normal;
+			color: $green;
+			transition: transform 300ms;
+		}
+
+		&.is-open::before 
+		{
+			transform: rotate(90deg);
+		}
+	}
+
+	.faq-answer-cont 
+	{
+		display: none; // toggled with js
+	} 
+
+	.faq-answer 
+	{
+		margin: 10px 0 4px;
+		padding-left: 40px;
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 1.45;
+	}
+
+	@media screen and (max-width: $medium-small)
+	{
+		padding: 50px 10px;
+
+		h2 
+		{
+			margin-bottom: 30px;
+			padding-bottom: 20px;
+			font-size: 30px;
+		}
+
+		.faq-question 
+		{
+			padding-left: 30px;
+			font-size: 17px;
+
+			&::before
+			{
+				top: -11px;
+			}
+		}
+
+		.faq-answer 
+		{
+			padding-left: 30px;
+			font-size: 14px;
+		}
+	}
+
+	@media screen and (max-width: 360px)
+	{
+		padding: 50px 0;
+	}
+}
+
+#values-block
+{
+	margin-bottom: 20px;
 	background: $green;
 	color: $cream;
 	text-align: center;
 
-	.values-block-inner {
+	.values-block-inner 
+	{
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 60px 30px 22px;
+		padding: 60px 30px 40px;
 	}
 	
 	h2
@@ -52,8 +168,7 @@ $small: 475px;
 	.values-list 
 	{
 		max-width: 900px;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto;
 		padding-left: 0px;
 		list-style-type: none;
 		display: flex;
@@ -88,7 +203,7 @@ $small: 475px;
 	{
 		.values-block-inner 
 		{
-			padding: 50px 28px 5px;
+			padding: 50px 28px 12px;
 		}
 
 		h2 
@@ -131,7 +246,7 @@ $small: 475px;
 	{
 		.values-block-inner 
 		{
-			padding: 50px 28px 15px;
+			padding: 50px 28px 32px;
 		}
 
 		.values-list 
@@ -152,27 +267,15 @@ $small: 475px;
 			width: 95px
 		}
 
-		svg {
+		svg 
+		{
 			width: 70px;
 			height: 70px;
 		}
 
-		.value-item-text {
+		.value-item-text 
+		{
 			font-size: 14px;
 		}
-	}
-}
-
-.testing {
-	&::before
-	{
-		content: '\203A';
-		margin-right: 15px;
-		transition: transform 0.3s;
-		transform: rotate(90deg);
-		display: inline-block;
-		position: absolute;
-		left: 0;
-		font-size: 25px;
 	}
 }

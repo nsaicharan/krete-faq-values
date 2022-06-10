@@ -162,7 +162,51 @@
 <!-------------------------------------------------------------------------------------------------------------------->
 <!-------------------------------------------------- BEGIN EDITABLE -------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------------------------->
-               <section class="values-block">
+               <section id="faq-block">
+                  <div class="main-column">
+                     <h2>Top FAQs</i></h2>
+                     <ul class="faq-list">
+                        <li class="faq-list-item">
+                           <h3 class="faq-question">Why do I need skin care products when my skin already looks good?</h3>
+                           <div class="faq-answer-cont">
+                              <p class="faq-answer">Skin care is about skin health, not just how your skin looks (although your skin will look better after using Krete). Krete’s powerful ingredients get to work within 30 seconds to help heal your skin and make it look great.</p>
+                           </div>
+                        </li>
+                        <li class="faq-list-item">
+                           <h3 class="faq-question">Why should I trust Krete?</h3>
+                           <div class="faq-answer-cont">
+                              <p class="faq-answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur beatae aliquid minima eveniet assumenda libero recusandae, iste, eligendi quidem veritatis saepe? Culpa praesentium minus quos dicta saepe tempora ex obcaecati.</p>
+                           </div>
+                        </li>
+                        <li class="faq-list-item">
+                           <h3 class="faq-question">What results can I expect?</h3>
+                           <div class="faq-answer-cont">
+                              <p class="faq-answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur beatae aliquid minima eveniet assumenda libero recusandae, iste, eligendi quidem veritatis saepe? Culpa praesentium minus quos dicta saepe tempora ex obcaecati.</p>
+                           </div>
+                        </li>
+                        <li class="faq-list-item">
+                           <h3 class="faq-question">How is Krete specifically designed for men?</h3>
+                           <div class="faq-answer-cont">
+                              <p class="faq-answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur beatae aliquid minima eveniet assumenda libero recusandae, iste, eligendi quidem veritatis saepe? Culpa praesentium minus quos dicta saepe tempora ex obcaecati.</p>
+                           </div>
+                        </li>
+                        <li class="faq-list-item">
+                           <h3 class="faq-question">How does Krete work in under 30 seconds?</h3>
+                           <div class="faq-answer-cont">
+                              <p class="faq-answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur beatae aliquid minima eveniet assumenda libero recusandae, iste, eligendi quidem veritatis saepe? Culpa praesentium minus quos dicta saepe tempora ex obcaecati.</p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <script>
+                  $('.faq-question').on('click', function() {
+                     $(this).toggleClass('is-open');
+                     $(this).parent().find('.faq-answer-cont').slideToggle(300);
+                  });
+               </script>
+
+               <section id="values-block">
                   <div class="values-block-inner">
                      <h2>Beyond high performance skin care</h2>
                      <p>Krete's Hydrating Facial Serum is...</p>
