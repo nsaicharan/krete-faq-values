@@ -126,6 +126,7 @@ $small: 475px;
 		{
 			padding-left: 30px;
 			font-size: 14px;
+			line-height: 1.55;
 		}
 	}
 
@@ -254,6 +255,14 @@ $small: 475px;
 			max-width: 600px;
 		}
 
+		.value-item 
+		{
+			margin: 0 1.1vw 28px;
+		}
+	}
+
+	@media screen and (max-width: 389px) 
+	{ 
 		.value-item 
 		{
 			margin: 0 0.675vw 28px;

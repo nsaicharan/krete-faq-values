@@ -81,6 +81,7 @@
   #faq-block .faq-answer {
     padding-left: 30px;
     font-size: 14px;
+    line-height: 1.55;
   }
 }
 @media screen and (max-width: 360px) {
@@ -176,6 +177,11 @@
   #values-block .values-list {
     max-width: 600px;
   }
+  #values-block .value-item {
+    margin: 0 1.1vw 28px;
+  }
+}
+@media screen and (max-width: 389px) {
   #values-block .value-item {
     margin: 0 0.675vw 28px;
   }
