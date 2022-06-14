@@ -4,15 +4,25 @@
   background: #f5f4ec;
   color: #0f343d;
 }
-#faq-block h2 {
-  margin-top: 0;
-  margin-bottom: 40px;
-  padding-bottom: 22px;
+#faq-block .faq-block-title {
+  margin: 0;
+  padding-bottom: 2px;
   font-size: 40px;
   font-weight: 600;
   line-height: normal;
   text-align: center;
-  border-bottom: 1px solid currentColor;
+}
+#faq-block .faq-block-subtitle {
+  margin: 3px 0 0;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+#faq-block hr {
+  margin: 20px 0 40px;
+  height: 1px;
+  background: currentColor;
+  border: none;
 }
 #faq-block .faq-list {
   max-width: 700px;
@@ -66,10 +76,16 @@
   #faq-block {
     padding: 50px 10px;
   }
-  #faq-block h2 {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+  #faq-block .faq-block-title {
     font-size: 30px;
+  }
+  #faq-block .faq-block-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  #faq-block hr {
+    margin: 18px 0 30px;
   }
   #faq-block .faq-question {
     padding-left: 30px;
@@ -92,9 +108,13 @@
 
 #values-block {
   margin-bottom: 20px;
+  text-align: center;
   background: #567d68;
   color: #f5f4ec;
-  text-align: center;
+}
+#values-block.inverted {
+  background: #f5f4ec;
+  color: #567d68;
 }
 #values-block .values-block-inner {
   max-width: 1200px;
@@ -144,7 +164,7 @@
 }
 @media screen and (max-width: 1000px) {
   #values-block .values-block-inner {
-    padding: 50px 28px 12px;
+    padding: 50px 30px 12px;
   }
   #values-block h2 {
     font-size: 30px;
@@ -155,7 +175,7 @@
     margin: 0 0 38px;
   }
   #values-block .values-list {
-    max-width: 700px;
+    max-width: 720px;
   }
   #values-block .value-item {
     width: 100px;
@@ -172,10 +192,10 @@
 }
 @media screen and (max-width: 750px) {
   #values-block .values-block-inner {
-    padding: 50px 28px 32px;
+    padding: 50px 20px 32px;
   }
   #values-block .values-list {
-    max-width: 600px;
+    max-width: 430px;
   }
   #values-block .value-item {
     margin: 0 1.1vw 28px;
@@ -188,7 +208,7 @@
 }
 @media screen and (max-width: 374px) {
   #values-block .value-item {
-    width: 95px;
+    width: 92px;
   }
   #values-block svg {
     width: 70px;

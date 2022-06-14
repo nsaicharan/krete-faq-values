@@ -26,16 +26,30 @@ $small: 475px;
 	background: $cream;
 	color: $dark;
 
-	h2 
+	.faq-block-title
 	{
-		margin-top: 0;
-		margin-bottom: 40px;
-		padding-bottom: 22px;
+		margin: 0;
+		padding-bottom: 2px;
 		font-size: 40px;
 		font-weight: 600;
 		line-height: normal;
 		text-align: center;
-		border-bottom: 1px solid currentColor;
+	}
+
+	.faq-block-subtitle
+	{
+		margin: 3px 0 0;
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+	}
+
+	hr 
+	{
+		margin: 20px 0 40px;
+		height: 1px;
+		background: currentColor;
+		border: none;
 	}
 
 	.faq-list 
@@ -66,7 +80,7 @@ $small: 475px;
 		cursor: pointer;
 		-webkit-tap-highlight-color: transparent;
 
-		// Down arrow
+		// Arrow
 		&::before 
 		{
 			content: '\203A';
@@ -104,11 +118,21 @@ $small: 475px;
 	{
 		padding: 50px 10px;
 
-		h2 
+		.faq-block-title
 		{
-			margin-bottom: 30px;
-			padding-bottom: 20px;
 			font-size: 30px;
+		}
+
+		.faq-block-subtitle 
+		{
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 1.55;
+		}
+
+		hr 
+		{
+			margin: 18px 0 30px;
 		}
 
 		.faq-question 
@@ -139,9 +163,14 @@ $small: 475px;
 #values-block
 {
 	margin-bottom: 20px;
+	text-align: center;
 	background: $green;
 	color: $cream;
-	text-align: center;
+
+	&.inverted {
+		background: $cream;
+		color: $green;
+	}
 
 	.values-block-inner 
 	{
@@ -204,7 +233,7 @@ $small: 475px;
 	{
 		.values-block-inner 
 		{
-			padding: 50px 28px 12px;
+			padding: 50px 30px 12px;
 		}
 
 		h2 
@@ -221,7 +250,7 @@ $small: 475px;
 
 		.values-list 
 		{
-			max-width: 700px;
+			max-width: 720px;
 		}
 
 		.value-item 
@@ -247,12 +276,12 @@ $small: 475px;
 	{
 		.values-block-inner 
 		{
-			padding: 50px 28px 32px;
+			padding: 50px 20px 32px;
 		}
 
 		.values-list 
 		{
-			max-width: 600px;
+			max-width: 430px;
 		}
 
 		.value-item 
@@ -273,7 +302,7 @@ $small: 475px;
 	{
 		.value-item 
 		{
-			width: 95px
+			width: 92px
 		}
 
 		svg 
